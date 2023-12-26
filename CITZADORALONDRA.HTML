@@ -16,9 +16,12 @@
             justify-content: center;
             height: 100vh;
         }
+        
+        .container {
+            text-align: center; /* Para centrar el contenido en el contenedor */
+        }
 
         h2 {
-            text-align: center;
             color: #fff;
             font-size: 18px;
         }
@@ -31,6 +34,7 @@
             max-width: 300px;
             width: 100%;
             transition: background 0.3s ease;
+            margin-bottom: 20px; /* Separación del enlace "Regresar" */
         }
 
         form:hover {
@@ -64,6 +68,22 @@
             background-color: #ddd;
             text-align: right;
         } 
+
+        .regresar {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #3498db;
+            border-radius: 5px;
+            border: 2px solid #2980b9;
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        .regresar:hover {
+            background-color: #2980b9;
+        }
     </style>
 </head>
 <body>
@@ -161,13 +181,9 @@
                     <button onclick="imprimirFormulario()">Imprimir Formulario</button>
                 </td>
             </tr>
-            <tr>
-                <td colspan="4">
-                    <a class="regresar" href="Inventario_MASCAR.html">Regresar</a>
-                </td>
-            </tr>
         </table>
     </form>
+    <a class="regresar" href="Inventario_MASCAR.html">Regresar</a>
 </div>
 <script>
     var selectTipoMoto = document.getElementById("tipoMoto");
