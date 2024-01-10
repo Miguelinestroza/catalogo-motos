@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="\estilos.css">
+    <style>
+        body{
+            background-color: lightgrey;
+            font-family: sans-serif;
+        }
+          
+        .container2{
+            margin: auto;
+            background-color: white;
+            width: 500px;
+            padding: 30px;
+        }
+          
+        ul, li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+          
+        ul.slider {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+          
+        ul.slider li {
+            position: absolute;
+            opacity: 0;
+            width: inherit;
+            height: inherit;
+            transition: opacity .5s;
+            background: #fff;
+            text-align: center;
+        }
+          
+        ul.slider li img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+          
+        ul.slider li:first-child {
+            opacity: 1;
+        }
+          
+        ul.slider li:target {
+            opacity: 1;
+        }
+          
+        .menu{
+            text-align: center;
+            margin: 20px;
+        }
+          
+        .menu li{
+            display: inline-block;
+            text-align: center;
+        }
+          
+        .menu li a{
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            background-color: grey;
+            padding: 10px;
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="\index.html">INICIO</a></li>
+                    <li><a href="\Inventario_MASCAR.html">MASCAR</a></li>
+                    <li><a href="\Inventario_CREDIDEMO.html">CREDIDEMO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container2">
+  
+        <ul class="slider">
+          <li id="slide1">
+            <img src="CGL 125 1.webp"/>
+          </li>
+          <li id="slide2">
+            <img src="CGL 125 2.webp"/>
+          </li>
+          <li id="slide3">
+            <img src="CGL 125 3.webp"/>
+          </li>
+          <li id="slide4">
+            <img src="CGL 125 4.webp"/>
+          </li>
+          <li id="slide5">
+            <img src="CGL 125 5.webp"/>
+          </li>
+          <li id="slide6">
+            <a class="regresar" href="\Inventario_CREDIDEMO.html">Regresar</a>
+          </li>
+        </ul>
+        
+        <ul class="menu">
+          <li>
+            <a href="#slide1">1</a>
+          </li>
+          <li>
+            <a href="#slide2">2</a>
+          </li>
+          <li>
+            <a href="#slide3">3</a>
+          </li>
+          <li>
+            <a href="#slide4">4</a>
+          </li>
+          <li>
+            <a href="#slide5">5</a>
+          </li>
+          <li>
+            <a href="#slide6">←</a>
+          </li>
+        </ul>
+      </div>
+</body>
+</html>
