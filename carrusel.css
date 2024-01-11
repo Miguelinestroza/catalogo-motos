@@ -20,7 +20,7 @@ body{
 .container2{
     margin: auto;
     background-color: white;
-    width: 500px;
+    width: 300px;
     padding: 30px;
 }
  
@@ -32,8 +32,8 @@ ul, li {
   
 ul.slider {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
