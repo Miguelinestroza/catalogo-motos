@@ -1,12 +1,7 @@
-body{
-    background-color: lightgrey;
-    font-family: sans-serif;
-}
-  
 .container2{
     margin: auto;
     background-color: white;
-    width: 500px;
+    width: auto;
     padding: 30px;
 }
   
@@ -70,28 +65,4 @@ ul.slider li:target {
     height: 20px;
     font-size: 20px;
     border-radius: 100%;
-}
-
-@media only screen and (max-width: 768px) {
-    .container2 {
-        width: 100%;
-        padding: 15px;
-    }
-
-    ul.slider {
-        width: 100%;
-        height: auto;
-    }
-
-    /* Ajustes adicionales según sea necesario */
-    .navigation li {
-        margin: 0 10px;
-    }
-
-    .menu li a {
-        padding: 8px;
-        width: 15px;
-        height: 15px;
-        font-size: 15px;
-    }
 }
